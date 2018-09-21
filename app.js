@@ -6,18 +6,17 @@ Write a function called sum() that takes in two numbers as arguments and then re
 "The sum of 4 and 7 is 11."
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
-
 // Write your code here
+
 function sum(a, b) { //eslint-disable-line
   var solution1 = a + b;
-  var solution1Message= 'The sum of ${a} and ${b} is ${solution1}.';
-  return (solution1,solution1Message);
+  var solution1Message= ('The sum of ' + a + ' and ' + b + ' is ' + solution1 + '.');
+  return [solution1,solution1Message];
 }
 
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
-
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -30,8 +29,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+  var math2 = a * b ;
+  var math2message = ('The product of ' + a + ' and ' + b + ' is ' + math2 + '.');
+  console.log(math2, math2message);
+  return[math2, math2message];
 }
+
+// Here is the test for multiply(); uncomment it to run it
+testMultiply(5, 9);
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
