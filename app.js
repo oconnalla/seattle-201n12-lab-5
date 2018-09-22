@@ -95,7 +95,6 @@ function sumArray(sumArr) { //eslint-disable-line
   console.log(math4Message);
 
   return[sum4Var, math4Message];
-  
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -116,11 +115,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  var product5Var = multiply(multiply(testArray[0],testArray[1])[0],testArray[2])[0];
+  var math5Message = `The numbers ${testArray} have a product of 24.`;
 
+  return[product5Var, math5Message];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
